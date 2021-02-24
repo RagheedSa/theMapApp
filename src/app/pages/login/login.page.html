@@ -1,0 +1,27 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>UJ Interactive Map App</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form (ngSubmit)="login()" [formGroup]="credentials">
+    <div class="input-group">
+      <ion-item>
+        <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
+      </ion-item>
+
+     
+
+      <ion-item>
+        <ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
+      </ion-item>
+     
+    </div>
+
+    <ion-button type="submit" expand="block" [disabled]="!credentials.valid">Log in</ion-button>
+   
+  </form>
+</ion-content>
