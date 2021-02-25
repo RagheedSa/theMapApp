@@ -16,4 +16,15 @@ import { Router } from '@angular/router';
       await this.authService.logout();
       this.router.navigateByUrl('/', { replaceUrl: true });
     }
+ 
+      btnClicked(){
+      console.log("btn Clicked");
+      this.router.navigate(['events'])
+      }
+
+      btnClicked1(){
+        console.log("btn Clicked1");
+        this.router.navigate(['login'])
+        }
+      
 }

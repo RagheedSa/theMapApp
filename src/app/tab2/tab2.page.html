@@ -10,12 +10,19 @@
 
   <ion-toolbar>
     <div class="ion-text-center">
-      <ion-button>Events</ion-button>
-      <ion-button>Map</ion-button>
-      <ion-button (click)="logout()">Logout</ion-button>
+      <ion-button (click)="btnClicked()" routerLinks="/events">Events</ion-button>
+
+      <ion-button (click)="btnClicked1()" routerLinks="/Map">Map</ion-button>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <button (click)="logout()">Logout</button>
 
     </div>
-
+    
   </ion-toolbar>
 
 </ion-content>
