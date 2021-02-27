@@ -6,10 +6,11 @@
 
     <img src="assets/blue2.png">
   </div>
+  <button onclick="history.back()" item-left> <img src="assets/back.png" class='iconDetails'> </button>
+
   <ion-item>
 
 
-      <button onclick="history.back()" item-left> <img src="assets/back.png" class='iconDetails'> </button>
       <h1 >Choose Faculty</h1>
 
     </ion-item>
@@ -21,27 +22,27 @@
  
 
     <!-- Item Dividers in a List -->
-    <br>
-    <br>
+  
     <ion-list>
-     
       <ion-item>
-        <ion-button (click)="btnClicked()" routerLinks="/eventsofcomputer">Faculity of Engineering</ion-button>
+        <ion-button (click)="btnClicked()" routerLinks="/e1">Faculity of Engineering</ion-button>
       </ion-item>
       <ion-item>
-        <ion-button>Faculty of the Holy Quran and Islamic Studies</ion-button>
+
+        <ion-button (click)="btnClicked1()" routerLinks="/e2">Faculty of the Holy Quran and Islamic Studies</ion-button>
+  
       </ion-item>
       <ion-item>
-        <ion-button>Faculty of Business and Law</ion-button>
+        <ion-button (click)="btnClicked2()" routerLinks="/e3">Faculty of Business and Law</ion-button>
       </ion-item>
 
       <ion-item>
-          <ion-button>Faculty of Science</ion-button>
+          <ion-button (click)="btnClicked3()" routerLinks="/e4">Faculty of Science</ion-button>
       </ion-item>
         <ion-item>
-          <ion-button>Faculty of Computer Science and Engineering</ion-button>
+          <ion-button (click)="btnClicked4()" routerLinks="/e5">Faculty of Computer Science and Engineering</ion-button>
       </ion-item>
-
+    
     </ion-list>
-
+  
 </ion-content>

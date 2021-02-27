@@ -3,23 +3,22 @@ ion-button {
     text-transform: initial;
     --color: #6d6d6d;
     --box-shadow:none;
-    font-size: 16px;
-
+    font-size: 17px;
+    height:50px ;  
     
     }
     
     h1{
         margin-top: 12px;
-margin-left: 75px;
     color: #3383D8;
-    font-size: 20px;
+    font-size: 25px;
     text-transform: initial;
     
     }
     button{
         background: #ffffff;      
-        width: 30px;
-        height:30px ;  
+        width: 35px;
+        height:35px ;  
     }
     
     ion-button:hover { 
